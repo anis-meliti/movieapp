@@ -1,0 +1,18 @@
+.rating-cont {
+    max-width: 500px;
+    border: 1px solid #ababab;
+    border-radius: 5px;
+
+}
+
+.movie-poster {
+    width: 100%;
+    border-top: 1px solid #000;
+}
+
+.movie-title {
+    border-top: 1px solid #000;
+    font-weight: 600;
+    min-height: 45px;
+    padding: 1%;
+}

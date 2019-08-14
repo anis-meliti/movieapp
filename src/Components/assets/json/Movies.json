@@ -1,0 +1,16 @@
+ [{
+         "title": "V for Vandetta",
+         "poster": "http://i.ebayimg.com/00/s/NTAwWDMzMw==/z/VIsAAOxyaTxTWIqs/$_3.JPG?set_id=2",
+         "rating": 5
+     },
+     {
+         "title": "The Detachement",
+         "poster": "https://www.joblo.com/assets/images/oldsite/posters/images/full/detachment-french-poster.jpg",
+         "rating": 4
+     },
+     {
+         "title": "The experiment",
+         "poster": "https://images-na.ssl-images-amazon.com/images/I/51UFOnvEviL.jpg",
+         "rating": 5
+     }
+ ]
