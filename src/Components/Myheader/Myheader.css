@@ -1,3 +1,7 @@
+.header-cont {
+    justify-content: center;
+}
+
 .searchbtn {
     background-image: url("../assets/img/magnifier.png");
     background-size: 100%;

@@ -9,7 +9,6 @@ class Movies extends Component {
             <Container>
                 <Row>
                     {MovieList.map((el, i) => <MovieCard title={el.title} poster={el.poster} rating={el.rating} key={i} />)}
-
                 </Row>
             </Container>
         )

@@ -6,7 +6,7 @@ import { Container, Row, Col, Button, InputGroup, FormControl } from 'react-boot
 class Myheader extends Component {
     render() {
         return (
-            <Container>
+            <Container className="header-cont">
                 <Row>
                     <Col md={8}>
                         <InputGroup className="mb-3">
