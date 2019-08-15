@@ -8,7 +8,7 @@ class Myheader extends Component {
         return (
             <Container className="header-cont">
                 <Row>
-                    <Col md={8}>
+                    <Col>
                         <InputGroup className="mb-3">
                             <FormControl
                                 placeholder="Search movie by name...."

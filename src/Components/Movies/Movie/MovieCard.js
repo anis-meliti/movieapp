@@ -11,9 +11,9 @@ class MovieCard extends Component {
         return (
             <Container className='rating-cont'>
                 <Row>
-                    <Col className='rating-row' >
+                    <Col className='rating-row'>
 
-                        {/* <img src={star} alt='rating star' /> */}
+
                         <FormLabel>{this.props.rating}</FormLabel>
 
                     </Col>
