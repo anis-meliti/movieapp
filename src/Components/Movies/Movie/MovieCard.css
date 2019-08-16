@@ -16,3 +16,7 @@
     min-height: 45px;
     padding: 1%;
 }
+
+.rating-row {
+    justify-content: flex-end
+}

@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 // ******Style*********
 import './Myheader.css'
 import { Container, Row, Col, Button, InputGroup, FormControl } from 'react-bootstrap'
+// ********Star rating******
+import StarRatingComponent from 'react-star-rating-component'
+
 
 class Myheader extends Component {
     render() {
@@ -24,8 +27,16 @@ class Myheader extends Component {
                         </InputGroup>
 
                     </Col>
-                    <Col>
+                    <Col >
+                        <StarRatingComponent className="star-rating"
+                            name="rate1"
+                            starCount={5}
+                            starRatedColor="yellow"
+                            onStarClick={this.props.rating.bind(this)}
+                            numberOfStars={5}
+                            value={0}
 
+                        />
                     </Col>
 
                 </Row>

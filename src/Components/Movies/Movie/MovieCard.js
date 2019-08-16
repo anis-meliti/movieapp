@@ -1,22 +1,23 @@
 import React, { Component } from 'react'
 // *********Style**********
-import { Container, Row, Col, FormLabel } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import './MovieCard.css'
 
 // *********image***************
-
+import StarRatingComponent from 'react-star-rating-component'
 
 class MovieCard extends Component {
     render() {
         return (
             <Container className='rating-cont'>
-                <Row>
-                    <Col className='rating-row'>
+                <Row className="rating-row">
 
+                    <StarRatingComponent
+                        name="rate1"
+                        starCount={5}
+                        value={parseInt(this.props.rating)}
+                    />
 
-                        <FormLabel>{this.props.rating}</FormLabel>
-
-                    </Col>
                 </Row>
                 <Row >
                     <img src={this.props.poster} alt='movie poster' className="movie-poster" />

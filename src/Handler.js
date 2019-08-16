@@ -13,11 +13,17 @@ class Handler extends Component {
         }
     }
 
+    onStarClick = (nextValue) => {
+        let rate;
+        nextValue === 0 ? this.setState({ MovieList: MoviesList }) : rate = this.state.MovieList.filter(el => el.rating === nextValue);
+        rate && this.setState({ MovieList: rate })
+        console.log(rate)
+
+    }
     onSearchHandler = event => {
         let holder
         event.target.value.toString() === "" ? this.setState({ MovieList: MoviesList }) : holder = this.state.MovieList.filter(el => el.title.toLowerCase().includes(event.target.value.toString().toLowerCase()));
         holder && this.setState({ MovieList: holder })
-        console.log(holder)
     }
 
     handler = movie => this.setState({ MovieList: [...this.state.MovieList, movie] });
@@ -26,7 +32,7 @@ class Handler extends Component {
         console.log(this.state.filter)
         return (
             <div>
-                <Myheader search={this.onSearchHandler} />
+                <Myheader search={this.onSearchHandler} rating={this.onStarClick} />
                 <Movies MovieList={this.state.MovieList} handler={this.handler} filter={this.state.filter} />
                 <Movie handler={this.handler} />
             </div>
