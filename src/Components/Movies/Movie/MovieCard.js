@@ -17,7 +17,6 @@ class MovieCard extends Component {
                         starCount={5}
                         value={parseInt(this.props.rating)}
                     />
-
                 </Row>
                 <Row >
                     <img src={this.props.poster} alt='movie poster' className="movie-poster" />

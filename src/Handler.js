@@ -15,10 +15,9 @@ class Handler extends Component {
 
     onStarClick = (nextValue) => {
         let rate;
-        nextValue === 0 ? this.setState({ MovieList: MoviesList }) : rate = this.state.MovieList.filter(el => el.rating === nextValue);
+        nextValue === 1 ? this.setState({ MovieList: MoviesList }) : rate = this.state.MovieList.filter(el => el.rating === nextValue);
         rate && this.setState({ MovieList: rate })
         console.log(rate)
-
     }
     onSearchHandler = event => {
         let holder

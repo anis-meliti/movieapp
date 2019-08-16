@@ -17,13 +17,7 @@ class Myheader extends Component {
                                 placeholder="Search movie by name...."
                                 onChange={this.props.search}
                             />
-                            <InputGroup.Append>
-                                <Button
-                                    variant="outline-secondary"
-                                    className="searchbtn"
 
-                                ></Button>
-                            </InputGroup.Append>
                         </InputGroup>
 
                     </Col>
@@ -34,7 +28,6 @@ class Myheader extends Component {
                             starRatedColor="yellow"
                             onStarClick={this.props.rating.bind(this)}
                             numberOfStars={5}
-                            value={0}
 
                         />
                     </Col>
