@@ -17,19 +17,6 @@ class AddnewMovie extends Component {
 
         this.setState({ [event.target.id]: event.target.value })
     }
-
-
-
-    // resetField = () => this.setState({
-    //     movieName: '',
-    //     moviePoster: '',
-    //     movieRating: ''
-    // })
-    // addMovie = () => {
-    //     this.props.handler(this.state)
-    // }
-
-
     render() {
         console.log(this.state)
         return (

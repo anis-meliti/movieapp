@@ -10,12 +10,16 @@ class Myheader extends Component {
                 <Row>
                     <Col>
                         <InputGroup className="mb-3">
-                            <FormControl
+                            <FormControl name='searchBox'
                                 placeholder="Search movie by name...."
-
+                                onChange={this.props.search}
                             />
                             <InputGroup.Append>
-                                <Button variant="outline-secondary" className="searchbtn"></Button>
+                                <Button
+                                    variant="outline-secondary"
+                                    className="searchbtn"
+
+                                ></Button>
                             </InputGroup.Append>
                         </InputGroup>
 

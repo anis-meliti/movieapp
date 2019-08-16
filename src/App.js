@@ -2,7 +2,7 @@ import React from 'react';
 // *******Styles*********
 import './App.css';
 // ******Components*******
-import Handler from './Hnadler'
+import Handler from './Handler'
 
 
 function App() {
