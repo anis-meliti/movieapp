@@ -14,8 +14,6 @@ import AddnewMovie from '../../AddNewMovie';
 
 
 class Movie extends Component {
-
-
   render() {
     return (
       <Popup trigger={
@@ -26,9 +24,11 @@ class Movie extends Component {
             </Col>
           </Row>
         </Container>} on='click' close modal >
-        <AddnewMovie />
+        <AddnewMovie handler={this.props.handler} />
       </Popup>
+
     )
+
   }
 }
 
