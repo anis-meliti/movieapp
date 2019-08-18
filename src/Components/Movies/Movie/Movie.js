@@ -26,9 +26,7 @@ class Movie extends Component {
         </Container>} on='click' close modal >
         <AddnewMovie handler={this.props.handler} />
       </Popup>
-
     )
-
   }
 }
 

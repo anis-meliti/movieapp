@@ -3,6 +3,7 @@ import Movies from './Components/Movies/Movies'
 import Myheader from './Components/Myheader/Myheader';
 import Movie from './Components/Movies/Movie/Movie'
 import MoviesList from './Components/assets/json/Movies.json'
+import LoaderHOC from './Hoc/LoaderHOC';
 
 
 class Handler extends Component {
@@ -10,14 +11,15 @@ class Handler extends Component {
         super();
         this.state = {
             MovieList: MoviesList,
+            isLoading: true
         }
+
     }
 
     onStarClick = (nextValue) => {
         let rate;
         nextValue === 1 ? this.setState({ MovieList: MoviesList }) : rate = this.state.MovieList.filter(el => el.rating === nextValue);
         rate && this.setState({ MovieList: rate })
-        console.log(rate)
     }
     onSearchHandler = event => {
         let holder
@@ -28,7 +30,6 @@ class Handler extends Component {
     handler = movie => this.setState({ MovieList: [...this.state.MovieList, movie] });
 
     render() {
-        console.log(this.state.filter)
         return (
             <div>
                 <Myheader search={this.onSearchHandler} rating={this.onStarClick} />
@@ -39,4 +40,4 @@ class Handler extends Component {
     }
 }
 
-export default Handler
+export default LoaderHOC(Handler)

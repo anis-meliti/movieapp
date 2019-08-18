@@ -36,7 +36,7 @@ class AddnewMovie extends Component {
                         <Button variant="success" onClick={() => this.props.handler(this.state)} >Add</Button>
                     </Col>
                 </Row>
-            </Container >
+            </Container>
 
         )
     }
