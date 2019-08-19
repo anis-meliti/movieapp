@@ -11,10 +11,10 @@ class Handler extends Component {
         super();
         this.state = {
             MovieList: MoviesList,
-            isLoading: true
         }
 
     }
+
 
     onStarClick = (nextValue) => {
         let rate;
